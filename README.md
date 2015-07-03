@@ -2,6 +2,9 @@
 
 ## Contents:
 - [Docker vs Vagrant](#docker-vs-vagrant)
+  - [Vagrant](#vagrant)
+  - [Docker](#docker)
+  - [Quora Awnsers](#interesting-quora-awnsers)
 - [Puppet vs Chef](#puppet-vs-chef)
 - [Testing](#testing)
   - [RSpec vs Cucumber](#rspec-vs-cucumber)
@@ -9,7 +12,7 @@
 
 ##Docker vs Vagrant
 
-####Vagrent
+####Vagrant
 
 Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
 To achieve its magic, Vagrant stands on the shoulders of giants. Machines are provisioned on top of VirtualBox, VMware, AWS, or any other provider. Then, industry-standard provisioning tools such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the machine.
@@ -32,7 +35,9 @@ Docker is an open-source project to easily create lightweight, portable, self-su
 
 >Docker is a technology that allows you to run self-contained applications eliminating worries about dependencies and libraries.
 
-#### Interesting Quora Awnsers:
+[Source](https://medium.com/@_marcos_otero/docker-vs-vagrant-582135beb623) _2014_
+
+#### Interesting Quora Awnsers
 **Short answer: Vagrant abstracts the machine where as Docker abstracts the application..**
 
 **Vagrant** uses virtualbox to spin up a virtual machine for you where you can set up your own environment and install everything you need on that machine mostly through some provisioning scripts. Its most common use case is to test your application on different environments and spin up test servers/machines where your teammates can ssh to and test their work on where everyone else can see and use.
@@ -40,7 +45,8 @@ Docker is an open-source project to easily create lightweight, portable, self-su
 **Docker** on the other hand uses images and containers to build your application as an image. An image is basically an instance of your application with all of its setup environment and requirements installed, however its not a machine.. A container is basically a process/service that runs on the background, it acts as a virtual machine that contains your images, but its not one, its just a service that runs on top of a machine. You can run many images in one container and you can run many containers on one machine.
 
 If you have your docker image, you can run your application on any machine, all you need is to have docker installed. Docker uses dockerhub as a CDN where users can pull/push images from repositories.
-[Source](http://www.quora.com/What-is-the-difference-between-Docker-and-Vagrant-When-should-you-use-each-one)
+
+[Source](http://www.quora.com/What-is-the-difference-between-Docker-and-Vagrant-When-should-you-use-each-one) _2014/2015_
 
 
 **The author of Vagrant says:**
@@ -65,7 +71,7 @@ If you have your docker image, you can run your application on any machine, all 
 
 >**In summary:** Vagrant is for managing machines, Docker is for building and running application environments.
 
-[Source](http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment)
+[Source](http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment) _2013_
 
 
 
