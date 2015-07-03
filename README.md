@@ -1,2 +1,6 @@
-# learn_all_the_things
-Collection of Things we learnt or want to learn
+![](https://torsaporsa.files.wordpress.com/2013/09/iltni.jpg)
+
+## Docker vs. Vagrant
+
+
+## RSpec vs Cucumber vs ...
